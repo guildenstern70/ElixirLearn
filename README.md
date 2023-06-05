@@ -4,7 +4,7 @@ A collection of utilities to learn Elixir
 
 ## Setup
 
-To run this program you to setup an Erlang+Elixir environment, as it is described here:
+To run this program you to need setup an Erlang+Elixir environment, as it is described here:
 https://elixir-lang.org/install.html
 
 ### Download dependencies
@@ -19,9 +19,11 @@ https://elixir-lang.org/install.html
 
     mix escript.build
 
-## Run
+### Run
 
-  ./elixir_learn
+  First generate the executable by running 'mix escript.build', then:
+
+    ./elixir_learn
 
 ## Run tests
 

@@ -21,7 +21,7 @@ https://elixir-lang.org/install.html
 
 ### Run
 
-  First generate the executable by running 'mix escript.build', then:
+First generate the executable by running `mix escript.build` then:
 
     ./elixir_learn
 

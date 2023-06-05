@@ -10,7 +10,9 @@ defmodule ElixirLearnTest do
   use ExUnit.Case
   doctest ElixirLearn
 
-  test "greets the world" do
-    Logger.debug("Hello -> " <> ElixirLearn.version())
+  test "Print out version" do
+    version = ElixirLearn.version()
+    Logger.debug(version)
+    assert String.starts_with?(version, "ElixirLearn") == true
   end
 end

@@ -1,3 +1,8 @@
 {
-    "image": "elixir:1.15"
+    "image": "elixir:1.15",
+    "customizations": {
+      "vscode": {
+        "extensions": ["JakeBecker.elixir-ls"]
+      }
+    }
   }

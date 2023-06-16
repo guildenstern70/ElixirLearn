@@ -14,7 +14,7 @@ defmodule ElixirLearn do
 
   ## Examples
 
-      iex> ElixirLearn.version()
+      iex> ElixirLearn.version
 
   """
   def version do

@@ -22,4 +22,16 @@ defmodule ElixirLearnTest do
     assert city == "Milan"
   end
 
+  test "Map defined" do
+    dict = Maps.defineMap
+    Logger.debug(dict)
+    assert Enum.count(dict) == 3
+  end
+
+  test "Get Admin from map" do
+    admin = Maps.getMapValue
+    Logger.debug(admin)
+    assert admin == "user_admin"
+  end
+
 end

@@ -34,4 +34,19 @@ defmodule ElixirLearnTest do
     assert admin == "user_admin"
   end
 
+  test "Pattern match #1" do
+    abc = PatternMatching.abc()
+    assert abc == {:hello, "world", 42}
+  end
+
+  test "Pattern match #2" do
+    key = PatternMatching.getKeyFromMap()
+    assert key == "user_admin"
+  end
+
+  test "Pattern match #3" do
+    first = PatternMatching.getFirstFromList()
+    assert first == 1
+  end
+
 end

@@ -6,6 +6,6 @@
 
 defmodule ElixirLearn.CLI do
   def main(_args \\ []) do
-    IO.puts(ElixirLearn.version)
+    IO.puts(ElixirLearn.version())
   end
 end

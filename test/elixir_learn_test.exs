@@ -49,4 +49,9 @@ defmodule ElixirLearnTest do
     assert first == 1
   end
 
+  test "Functions" do
+    two = Functions.getSquareRootOfFour()
+    assert two == 2
+  end
+
 end

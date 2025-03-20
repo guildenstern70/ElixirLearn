@@ -1,6 +1,6 @@
 #
 # ElixirLearn project
-# (C) 2023 Alessio Saltarin <alessiosaltarin@gmail.com>
+# (C) 2023-25 Alessio Saltarin <alessiosaltarin@gmail.com>
 # MIT License
 #
 
@@ -12,7 +12,7 @@ defmodule Functions do
       :math.sqrt(number)
     end
 
-    computeSquareRoot.(4) # Notice the "." !
+    computeSquareRoot.(4) # Notice the dot!
   end
 
 end

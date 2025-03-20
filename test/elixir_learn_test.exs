@@ -1,6 +1,6 @@
 #
 # ElixirLearn project
-# (C) 2023 Alessio Saltarin <alessiosaltarin@gmail.com>
+# (C) 2023-25 Alessio Saltarin <alessiosaltarin@gmail.com>
 # MIT License
 #
 
@@ -59,6 +59,11 @@ defmodule ElixirLearnTest do
     result = Pipes.doSomeWork(matrix)
     Logger.debug(result)
     assert result == [{1, 0}, {2, 1}, {3, 2}, {4, 3}, {5, 4}, {6, 5}, {7, 6}, {8, 7}, {9, 8}]
+  end
+  
+  test "Anonymous Functions" do
+    result = AnonymousFunctions.use_anonymous_functions()
+    assert result == 202
   end
 
 end

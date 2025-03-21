@@ -65,5 +65,10 @@ defmodule ElixirLearnTest do
     result = AnonymousFunctions.use_anonymous_functions()
     assert result == 202
   end
+  
+  test "Atoms" do
+    result = Atoms.isPairOrOdd(3)
+    assert result == :odd
+  end
 
 end

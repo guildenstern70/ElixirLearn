@@ -9,12 +9,12 @@ defmodule Maps do
   Elixir's Maps.
   """
 
-  def defineMap do
+  def define_map do
     dictionary = %{ "admin" => "user_admin", "password" => "jewkllewe333", "enabled" => true }
     dictionary
   end
 
-  def getMapValue do
+  def get_map_value do
     dictionary = %{ "admin" => "user_admin", "password" => "jewkllewe333", "enabled" => true }
     dictionary["admin"]
   end

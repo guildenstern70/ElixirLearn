@@ -22,41 +22,32 @@ defmodule ElixirLearnTest do
     assert city == "Milan"
   end
 
-  test "Map defined" do
-    dict = Maps.defineMap
+  test "Maps" do
+    dict = Maps.define_map()
     Logger.debug(dict)
     assert Enum.count(dict) == 3
-  end
-
-  test "Get Admin from map" do
-    admin = Maps.getMapValue
+    admin = Maps.get_map_value()
     Logger.debug(admin)
     assert admin == "user_admin"
   end
 
-  test "Pattern match #1" do
+  test "Pattern matching" do
     abc = PatternMatching.abc()
     assert abc == {:hello, "world", 42}
-  end
-
-  test "Pattern match #2" do
-    key = PatternMatching.getKeyFromMap()
+    key = PatternMatching.get_key_from_map()
     assert key == "user_admin"
-  end
-
-  test "Pattern match #3" do
-    first = PatternMatching.getFirstFromList()
+    first = PatternMatching.get_first_from_list()
     assert first == 1
   end
 
   test "Functions" do
-    two = Functions.getSquareRootOfFour()
+    two = Functions.get_square_root_of_four()
     assert two == 2
   end
 
   test "Pipes test" do
     matrix = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    result = Pipes.doSomeWork(matrix)
+    result = Pipes.do_some_jobs(matrix)
     Logger.debug(result)
     assert result == [{1, 0}, {2, 1}, {3, 2}, {4, 3}, {5, 4}, {6, 5}, {7, 6}, {8, 7}, {9, 8}]
   end
@@ -67,14 +58,14 @@ defmodule ElixirLearnTest do
   end
   
   test "Atoms" do
-    result = Atoms.isPairOrOdd(3)
+    result = Atoms.is_pair_or_odd(3)
     assert result == :odd
   end
   
   test "Conditionals" do
-    result1 = Conditionals.standardWayIsCond(0)
-    result2 = Conditionals.anotherWayIsCase(0)
-    result3 = Conditionals.youMayUseIfAlso(0)
+    result1 = Conditionals.standard_way_is_cond(0)
+    result2 = Conditionals.another_way_is_case(0)
+    result3 = Conditionals.you_may_also_use_if(0)
     assert result1 == "Zero"
     assert result2 == "Zero"
     assert result3 == "Zero"

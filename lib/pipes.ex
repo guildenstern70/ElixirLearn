@@ -9,7 +9,7 @@ defmodule Pipes do
   Elixir's Pipes.
   """
 
-    def doSomeWork(matrix) do
+    def do_some_jobs(matrix) do
         matrix
         |> Enum.chunk_every(3, 3)
         |> List.flatten

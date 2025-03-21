@@ -6,7 +6,7 @@
 
 defmodule Conditionals do
   
-  def standardWayIsCond(number) do
+  def standard_way_is_cond(number) do
     cond do
       number == 0 -> "Zero"
       number == 1 -> "One"
@@ -15,7 +15,7 @@ defmodule Conditionals do
     end
   end
   
-  def anotherWayIsCase(number) do
+  def another_way_is_case(number) do
     case number do
       0 -> "Zero"
       1 -> "One"
@@ -24,7 +24,7 @@ defmodule Conditionals do
     end
   end
   
-  def youMayUseIfAlso(number) do
+  def you_may_also_use_if(number) do
     if number == 0 do
       "Zero"
     else

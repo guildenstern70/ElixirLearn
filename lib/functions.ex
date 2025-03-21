@@ -6,7 +6,7 @@
 
 defmodule Functions do
 
-  def getSquareRootOfFour do
+  def get_square_root_of_four do
 
     computeSquareRoot = fn (number) ->
       :math.sqrt(number)

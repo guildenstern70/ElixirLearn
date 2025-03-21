@@ -6,7 +6,7 @@
 
 defmodule Atoms do
 
-  def isPairOrOdd(number) do
+  def is_pair_or_odd(number) do
     if rem(number, 2) == 0 do
       :pair
     else

@@ -70,5 +70,14 @@ defmodule ElixirLearnTest do
     result = Atoms.isPairOrOdd(3)
     assert result == :odd
   end
+  
+  test "Conditionals" do
+    result1 = Conditionals.standardWayIsCond(0)
+    result2 = Conditionals.anotherWayIsCase(0)
+    result3 = Conditionals.youMayUseIfAlso(0)
+    assert result1 == "Zero"
+    assert result2 == "Zero"
+    assert result3 == "Zero"
+  end
 
 end

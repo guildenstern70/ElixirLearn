@@ -70,5 +70,12 @@ defmodule ElixirLearnTest do
     assert result2 == "Zero"
     assert result3 == "Zero"
   end
+  
+  test "Guards" do
+    result = Guards.compare(7, 7)
+    assert result == "Correct"
+    result = Guards.compare(7, 8)
+    assert result == "So close"
+  end
 
 end

@@ -17,7 +17,7 @@ defmodule ElixirLearnTest do
   end
 
   test "Random city temperature" do
-    [ [city, temperature_c] | _tail ] = Lists.random_city_temperature()
+    [[city, temperature_c] | _tail] = Lists.random_city_temperature()
     Logger.debug(city <> " " <> temperature_c)
     assert city == "Milan"
   end
@@ -51,17 +51,17 @@ defmodule ElixirLearnTest do
     Logger.debug(result)
     assert result == [{1, 0}, {2, 1}, {3, 2}, {4, 3}, {5, 4}, {6, 5}, {7, 6}, {8, 7}, {9, 8}]
   end
-  
+
   test "Anonymous Functions" do
     result = AnonymousFunctions.use_anonymous_functions()
     assert result == 202
   end
-  
+
   test "Atoms" do
     result = Atoms.is_pair_or_odd(3)
     assert result == :odd
   end
-  
+
   test "Conditionals" do
     result1 = Conditionals.standard_way_is_cond(0)
     result2 = Conditionals.another_way_is_case(0)
@@ -70,7 +70,7 @@ defmodule ElixirLearnTest do
     assert result2 == "Zero"
     assert result3 == "Zero"
   end
-  
+
   test "Guards" do
     result = Guards.compare(7, 7)
     assert result == "Correct"
@@ -78,4 +78,8 @@ defmodule ElixirLearnTest do
     assert result == "So close"
   end
 
+  test "Counter" do
+    result = Recursion.counter(10)
+    assert result == 0
+  end
 end

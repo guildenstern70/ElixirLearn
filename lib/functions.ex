@@ -15,6 +15,7 @@ defmodule Functions do
     computeSquareRoot.(4) # Notice the dot!
   end
   
+  # Notice the comma!
   def one_liner, do: IO.puts("Hello")
 
 end

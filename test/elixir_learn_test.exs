@@ -82,4 +82,13 @@ defmodule ElixirLearnTest do
     result = Recursion.counter(10)
     assert result == 0
   end
+  
+  test "Tuples" do
+    result = Tuples.define_tuple()
+    assert result == {:ok, "Tuple defined"}
+    element = Tuples.get_tuple_element(result, 1)
+    assert element == "Tuple defined"
+    updated_tuple = Tuples.update_tuple_element(result, 1, 4)
+    assert updated_tuple == {:ok, 4}
+  end
 end

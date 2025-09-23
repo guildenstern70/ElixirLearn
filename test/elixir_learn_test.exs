@@ -21,6 +21,14 @@ defmodule ElixirLearnTest do
     Logger.debug(city <> " " <> temperature_c)
     assert city == "Milan"
   end
+  
+  test "Get first city temperature" do
+    cities = ["Milan", "Bruxelles", "New York", "Madrid"]
+    temperatures = [15, 17, 19, 21]
+    result = Lists.get_first_city_temperature(cities, temperatures)
+    Logger.debug(result)
+    assert result == "Milan has a temperature of 15°C"
+  end
 
   test "Maps" do
     dict = Maps.define_map()

@@ -20,15 +20,9 @@ You may use the provided "Dev Container" environment: https://code.visualstudio.
 
     mix compile
 
-### Build
+### Build & Run
 
-    mix escript.build
-
-### Run
-
-First generate the executable by running `mix escript.build` then:
-
-    ./elixir_learn
+    mix run
 
 ## Run tests
 

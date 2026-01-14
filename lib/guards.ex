@@ -8,6 +8,7 @@ defmodule Guards do
   @moduledoc """
     Guards are used as a complement to pattern matching. They trigger a function "when" a condition is met.
     They are often used with recursion.
+    Note that only macros can be used as guards.
   """
   
   def compare(secret_number, guess \\ :no_guess)

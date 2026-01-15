@@ -1,6 +1,6 @@
 #
 # ElixirLearn project
-# (C) 2023-25 Alessio Saltarin <alessiosaltarin@gmail.com>
+# (C) 2023-26 Alessio Saltarin <alessiosaltarin@gmail.com>
 # MIT License
 #
 
@@ -99,4 +99,31 @@ defmodule ElixirLearnTest do
     updated_tuple = Tuples.update_tuple_element(result, 1, 4)
     assert updated_tuple == {:ok, 4}
   end
+  
+  test "EnumMap" do
+    result = EnumFunctions.map_list()
+    assert result == [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+  end
+  
+  test "EnumFilter" do
+    result = EnumFunctions.filter_list()
+    assert result == [2, 4, 6, 8, 10]
+  end
+  
+  test "EnumReduce" do
+    result = EnumFunctions.reduce_list()
+    assert result == 55
+  end
+  
+  test "EnumSort" do
+    result = EnumFunctions.sort_list()
+    assert result == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  end
+  
+  test "EnumReverse" do
+    result = EnumFunctions.reverse_list()
+    assert result == [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+  end
+  
+  
 end

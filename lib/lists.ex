@@ -19,6 +19,12 @@ defmodule Lists do
       [city, temperature_c | output]
     end
   end
+  
+  def add_to_list(list, element) do
+    # You cannot directly modify a list in Elixir, you need to create a new one.
+    # In this case you add the element to the beginning of the list.
+    [element | list]
+  end
 
   def get_first_city_temperature(cities, temperatures) do
     [city | _] = cities
@@ -28,6 +34,7 @@ defmodule Lists do
 
   # Takes the "n" elementh from the list.
   # Enum.take(cities, -2) == ["New York", "Madrid"]
+  # [city | _] = Enum.take(cities, -2) => city = "New York"
   def get_n_city_temperature(cities, temperatures, n) do
     [city | _] = Enum.take(cities, -n)
     [temperature | _] = Enum.take(temperatures, -n)

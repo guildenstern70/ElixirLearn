@@ -125,5 +125,11 @@ defmodule ElixirLearnTest do
     assert result == [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
   end
   
+  test "AddToList" do
+    list = [1, 2, 3, 4, 5]
+    element = 6
+    result = Lists.add_to_list(list, element)
+    assert result == [6, 1, 2, 3, 4, 5]
+  end
   
 end

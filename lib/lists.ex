@@ -13,22 +13,24 @@ defmodule Lists do
     cities = ["Milan", "Bruxelles", "New York", "Madrid"]
     temperatures = [15, 17, 19, 21]
     output = []
+
     for city <- cities do
       temperature_c = "#{Enum.random(temperatures)}°C"
-      [city, temperature_c | output ]
+      [city, temperature_c | output]
     end
   end
-  
+
   def get_first_city_temperature(cities, temperatures) do
     [city | _] = cities
     [temperature | _] = temperatures
     "#{city} has a temperature of #{temperature}°C"
   end
-  
+
+  # Takes the "n" elementh from the list.
+  # Enum.take(cities, -2) == ["New York", "Madrid"]
   def get_n_city_temperature(cities, temperatures, n) do
-    [city | _] = Enum.take(cities, n)
-    [temperature | _] = Enum.take(temperatures, n)
+    [city | _] = Enum.take(cities, -n)
+    [temperature | _] = Enum.take(temperatures, -n)
     "#{city} has a temperature of #{temperature}°C"
   end
-
 end
